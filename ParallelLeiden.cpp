@@ -14,6 +14,10 @@ namespace NetworKit {
         this->result.allToSingletons();
     }
 
+    ParallelLeiden::~ParallelLeiden() {
+
+    }
+
     ParallelLeiden::ParallelLeiden(const Graph &graph, Partition basePartition, int iterations, bool randomize, double gamma) :
             CommunityDetectionAlgorithm(graph, std::move(basePartition)), gamma(gamma), numberOfIterations(iterations), random(randomize) {}
 

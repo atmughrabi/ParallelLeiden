@@ -7,7 +7,7 @@
 int main() {
     Graph g = SNAPGraphReader().read("../LFR0,7.el");
     ParallelLeiden pl(g);
-    Aux::setNumberOfThreads(8);
+    Aux::setNumberOfThreads(16);
     auto tmr = Aux::Timer();
     tmr.start();
     pl.run();

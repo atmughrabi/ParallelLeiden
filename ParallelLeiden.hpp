@@ -60,6 +60,7 @@ namespace NetworKit {
         explicit ParallelLeiden(const Graph &graph, int iterations = 3, bool randomize = true, double gamma = 1);
 
         ParallelLeiden(const Graph &graph, Partition basePartition, int iterations = 3, bool randomize = true, double gamma = 1);
+        ~ParallelLeiden();
 
         void run() override;
 
